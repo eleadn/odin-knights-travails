@@ -23,6 +23,10 @@ class ChessSquare {
 		}
 		return neighbors;
 	}
+
+	toString() {
+		return `${this.x},${this.y}`;
+	}
 }
 
 module.exports = { ChessSquare };
