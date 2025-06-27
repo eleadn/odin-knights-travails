@@ -56,4 +56,12 @@ function knightMoves(start, end) {
 	return knightMovesBsf(start, end);
 }
 
-module.exports = { knightMoves };
+function printMoves(moves) {
+	const countMoves = moves.length - 1;
+	console.log(`=> You made it in ${countMoves} moves! Here's your path:`);
+	for (const move of moves) {
+		console.log(move);
+	}
+}
+
+module.exports = { knightMoves, printMoves };
